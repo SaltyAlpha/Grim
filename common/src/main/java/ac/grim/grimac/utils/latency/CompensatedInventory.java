@@ -421,6 +421,7 @@ public class CompensatedInventory extends GrimProcessor implements PacketReceive
         if (event.getPacketType() == PacketType.Play.Server.SET_PLAYER_INVENTORY) {
             WrapperPlayServerSetPlayerInventory slot = new WrapperPlayServerSetPlayerInventory(event);
             final int slotID = slot.getSlot();
+            if (slotID < 0 || slotID >= inventory.getSlots().size()) return;
             final ItemStack item = slot.getStack();
 
             inventory.getInventoryStorage().handleServerCorrectSlot(slotID);
