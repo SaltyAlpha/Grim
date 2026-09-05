@@ -1,0 +1,82 @@
+[
+  {
+    "id": 2081454150,
+    "node_id": "PRR_kwDOFFQL3s58EHhG",
+    "user": {
+      "login": "MachineBreaker",
+      "id": 125693618,
+      "node_id": "U_kgDOB33usg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125693618?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MachineBreaker",
+      "html_url": "https://github.com/MachineBreaker",
+      "followers_url": "https://api.github.com/users/MachineBreaker/followers",
+      "following_url": "https://api.github.com/users/MachineBreaker/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MachineBreaker/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MachineBreaker/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MachineBreaker/subscriptions",
+      "organizations_url": "https://api.github.com/users/MachineBreaker/orgs",
+      "repos_url": "https://api.github.com/users/MachineBreaker/repos",
+      "events_url": "https://api.github.com/users/MachineBreaker/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MachineBreaker/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/1491#pullrequestreview-2081454150",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1491",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/1491#pullrequestreview-2081454150"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1491"
+      }
+    },
+    "submitted_at": "2024-05-27T20:53:18Z",
+    "commit_id": null
+  },
+  {
+    "id": 2081486164,
+    "node_id": "PRR_kwDOFFQL3s58EPVU",
+    "user": {
+      "login": "MachineBreaker",
+      "id": 125693618,
+      "node_id": "U_kgDOB33usg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125693618?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MachineBreaker",
+      "html_url": "https://github.com/MachineBreaker",
+      "followers_url": "https://api.github.com/users/MachineBreaker/followers",
+      "following_url": "https://api.github.com/users/MachineBreaker/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MachineBreaker/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MachineBreaker/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MachineBreaker/subscriptions",
+      "organizations_url": "https://api.github.com/users/MachineBreaker/orgs",
+      "repos_url": "https://api.github.com/users/MachineBreaker/repos",
+      "events_url": "https://api.github.com/users/MachineBreaker/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MachineBreaker/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/1491#pullrequestreview-2081486164",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1491",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/1491#pullrequestreview-2081486164"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1491"
+      }
+    },
+    "submitted_at": "2024-05-27T21:44:54Z",
+    "commit_id": "244dc6aed507eca6ae967d2763bf63afccc80be2"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 4869338916,
+    "node_id": "PRR_kwDOFFQL3s8AAAABIjw3JA",
+    "user": {
+      "login": "copilot-pull-request-reviewer[bot]",
+      "id": 175728472,
+      "node_id": "BOT_kgDOCnlnWA",
+      "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+      "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+      "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "## Pull request overview\n\nGuards two legacy code paths that could throw NPEs during edge conditions: (1) legacy fluid-flow prediction when encountering water-like block states that don’t expose `LEVEL` (notably bubble columns), and (2) proxy alert send/receive checks when configuration is transiently unavailable during startup/reload.\n\n**Changes:**\n- Added `LEVEL`-property presence checks before reading legacy liquid level and falling-liquid logic.\n- Treated bubble columns as source water (`depth=0`) for legacy liquid-depth calculations.\n- Made proxy alert `canSendAlerts` / `canReceiveAlerts` safely no-op when `ConfigManager` is temporarily `null`.\n\n### Reviewed changes\n\nCopilot reviewed 2 out of 2 changed files in this pull request and generated no comments.\n\n| File | Description |\n| ---- | ----------- |\n| common/src/main/java/ac/grim/grimac/utils/nmsutil/FluidTypeFlowing.java | Prevents legacy fluid prediction from reading `LEVEL` on states that don’t define it; special-cases bubble columns as source water. |\n| common/src/main/java/ac/grim/grimac/events/packets/ProxyAlertMessenger.java | Avoids proxy alert send/receive NPEs by short-circuiting when config is unavailable. |\n\n\n\n\n\n\n\n---\n\n💡 <a href=\"/GrimAnticheat/Grim/new/2.0?filename=.github/instructions/*.instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Add Copilot custom instructions</a> for smarter, more guided reviews. <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Learn how to get started</a>.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2824#pullrequestreview-4869338916",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2824",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2824#pullrequestreview-4869338916"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2824"
+      }
+    },
+    "submitted_at": "2026-08-05T22:30:09Z",
+    "commit_id": "c1c64e296a2b34733b649631963c3cc665b08dee"
+  }
+]

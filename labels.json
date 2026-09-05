@@ -1,0 +1,252 @@
+[
+  {
+    "id": 2761176666,
+    "node_id": "MDU6TGFiZWwyNzYxMTc2NjY2",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/bug",
+    "name": "bug",
+    "color": "d73a4a",
+    "default": true,
+    "description": "Something isn't working",
+    "archived_at": null
+  },
+  {
+    "id": 4355725366,
+    "node_id": "LA_kwDOFFQL3s8AAAABA58YNg",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/bypass",
+    "name": "bypass",
+    "color": "662A10",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 8760384990,
+    "node_id": "LA_kwDOFFQL3s8AAAACCijd3g",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/cla-signed",
+    "name": "cla-signed",
+    "color": "4d7d74",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 2761176669,
+    "node_id": "MDU6TGFiZWwyNzYxMTc2NjY5",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/enhancement",
+    "name": "enhancement",
+    "color": "a2eeef",
+    "default": true,
+    "description": "New feature or request",
+    "archived_at": null
+  },
+  {
+    "id": 4355719929,
+    "node_id": "LA_kwDOFFQL3s8AAAABA58C-Q",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/error",
+    "name": "error",
+    "color": "71AB7F",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 4355718888,
+    "node_id": "LA_kwDOFFQL3s8AAAABA57-6A",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/false%20positive",
+    "name": "false positive",
+    "color": "F85177",
+    "default": false,
+    "description": "False positive",
+    "archived_at": null
+  },
+  {
+    "id": 4096415739,
+    "node_id": "LA_kwDOFFQL3s70Klf7",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/good%20first%20issue",
+    "name": "good first issue",
+    "color": "07344A",
+    "default": true,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 2761176670,
+    "node_id": "MDU6TGFiZWwyNzYxMTc2Njcw",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/help%20wanted",
+    "name": "help wanted",
+    "color": "008672",
+    "default": true,
+    "description": "Extra attention is needed",
+    "archived_at": null
+  },
+  {
+    "id": 2761176672,
+    "node_id": "MDU6TGFiZWwyNzYxMTc2Njcy",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/invalid",
+    "name": "invalid",
+    "color": "e4e669",
+    "default": true,
+    "description": "This doesn't seem right",
+    "archived_at": null
+  },
+  {
+    "id": 4177375104,
+    "node_id": "LA_kwDOFFQL3s74_a-A",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/legacy",
+    "name": "legacy",
+    "color": "3D5FEB",
+    "default": false,
+    "description": "Likely 1.7-1.12 specific",
+    "archived_at": null
+  },
+  {
+    "id": 9429781561,
+    "node_id": "LA_kwDOFFQL3s8AAAACMg8MOQ",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/Not%20Grim%20(External%20Library/Plugin%20Issue)",
+    "name": "Not Grim (External Library/Plugin Issue)",
+    "color": "7c36d3",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 4329335632,
+    "node_id": "LA_kwDOFFQL3s8AAAABAgxrUA",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/packetevents",
+    "name": "packetevents",
+    "color": "9BD527",
+    "default": false,
+    "description": "Caused by PacketEvents",
+    "archived_at": null
+  },
+  {
+    "id": 9916691773,
+    "node_id": "LA_kwDOFFQL3s8AAAACTxS1PQ",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/pharus-fixed",
+    "name": "pharus-fixed",
+    "color": "e7dae6",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 8524748915,
+    "node_id": "LA_kwDOFFQL3s8AAAAB_B1Ycw",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/platform:%20bukkit",
+    "name": "platform: bukkit",
+    "color": "1d76db",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 8524749594,
+    "node_id": "LA_kwDOFFQL3s8AAAAB_B1bGg",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/platform:%20fabric",
+    "name": "platform: fabric",
+    "color": "dbd0b4",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 8540358568,
+    "node_id": "LA_kwDOFFQL3s8AAAAB_QuHqA",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/platform:%20sponge",
+    "name": "platform: sponge",
+    "color": "f7cf0d",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 9080914540,
+    "node_id": "LA_kwDOFFQL3s8AAAACHUPCbA",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/revisit",
+    "name": "revisit",
+    "color": "5D3FD3",
+    "default": false,
+    "description": "have a workaround/fix but should be revisited and better addressed or fixed in the future",
+    "archived_at": null
+  },
+  {
+    "id": 7352338749,
+    "node_id": "LA_kwDOFFQL3s8AAAABtjvJPQ",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/simulation",
+    "name": "simulation",
+    "color": "0AF93D",
+    "default": false,
+    "description": "Related to Simulation / Prediction engine",
+    "archived_at": null
+  },
+  {
+    "id": 7824783235,
+    "node_id": "LA_kwDOFFQL3s8AAAAB0mS3gw",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/status:%20blocked",
+    "name": "status: blocked",
+    "color": "281D2D",
+    "default": false,
+    "description": "The issue or pull request is blocked by something else",
+    "archived_at": null
+  },
+  {
+    "id": 7903136277,
+    "node_id": "LA_kwDOFFQL3s8AAAAB1xBKFQ",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/status:%20changes%20requested",
+    "name": "status: changes requested",
+    "color": "5319e7",
+    "default": false,
+    "description": "Maintainers have requested changes be made to the PR before merging",
+    "archived_at": null
+  },
+  {
+    "id": 7823968120,
+    "node_id": "LA_kwDOFFQL3s8AAAAB0lhHeA",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/status:%20rebase%20required",
+    "name": "status: rebase required",
+    "color": "C7635F",
+    "default": false,
+    "description": "The pull request needs rebasing onto the merge branch",
+    "archived_at": null
+  },
+  {
+    "id": 7823984668,
+    "node_id": "LA_kwDOFFQL3s8AAAAB0liIHA",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/status:%20review%20required",
+    "name": "status: review required",
+    "color": "fbca04",
+    "default": false,
+    "description": "The pull request is awaiting review",
+    "archived_at": null
+  },
+  {
+    "id": 4897904774,
+    "node_id": "LA_kwDOFFQL3s8AAAABI_AYhg",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/Todo",
+    "name": "Todo",
+    "color": "6BD6D6",
+    "default": false,
+    "description": "",
+    "archived_at": null
+  },
+  {
+    "id": 4245420064,
+    "node_id": "LA_kwDOFFQL3s79C_gg",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/viaversion",
+    "name": "viaversion",
+    "color": "4032E7",
+    "default": false,
+    "description": "Caused by ViaVersion",
+    "archived_at": null
+  },
+  {
+    "id": 2761176674,
+    "node_id": "MDU6TGFiZWwyNzYxMTc2Njc0",
+    "url": "https://api.github.com/repos/GrimAnticheat/Grim/labels/wontfix",
+    "name": "wontfix",
+    "color": "ffffff",
+    "default": true,
+    "description": "This will not be worked on",
+    "archived_at": null
+  }
+]

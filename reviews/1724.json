@@ -1,0 +1,42 @@
+[
+  {
+    "id": 2308101247,
+    "node_id": "PRR_kwDOFFQL3s6JktR_",
+    "user": {
+      "login": "matsu1213",
+      "id": 85377530,
+      "node_id": "MDQ6VXNlcjg1Mzc3NTMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85377530?u=2331fcfc724f6d59a4710c8430c83d73c343304f&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/matsu1213",
+      "html_url": "https://github.com/matsu1213",
+      "followers_url": "https://api.github.com/users/matsu1213/followers",
+      "following_url": "https://api.github.com/users/matsu1213/following{/other_user}",
+      "gists_url": "https://api.github.com/users/matsu1213/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/matsu1213/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/matsu1213/subscriptions",
+      "organizations_url": "https://api.github.com/users/matsu1213/orgs",
+      "repos_url": "https://api.github.com/users/matsu1213/repos",
+      "events_url": "https://api.github.com/users/matsu1213/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/matsu1213/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Please improve unnatural expressions by machine translation.",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/1724#pullrequestreview-2308101247",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1724",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/1724#pullrequestreview-2308101247"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1724"
+      }
+    },
+    "submitted_at": "2024-09-17T03:17:08Z",
+    "commit_id": "330a9782bc2baab5bb058714dacc38df2b7fede0"
+  }
+]

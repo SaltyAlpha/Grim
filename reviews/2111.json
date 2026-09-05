@@ -1,0 +1,82 @@
+[
+  {
+    "id": 2867169989,
+    "node_id": "PRR_kwDOFFQL3s6q5YrF",
+    "user": {
+      "login": "copilot-pull-request-reviewer[bot]",
+      "id": 175728472,
+      "node_id": "BOT_kgDOCnlnWA",
+      "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+      "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+      "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "## Pull Request Overview\n\nThis PR updates the `WrongBreak` check to include the broken block’s type in the alert message.\n\n- Added `\", type=\" + blockBreak.block.getType()` to both `CANCELLED_DIGGING` and `FINISHED_DIGGING` alerts.\n- Refactored long string concatenations onto multiple lines for readability.\n\n\n<details>\n<summary>Comments suppressed due to low confidence (1)</summary>\n\n**common/src/main/java/ac/grim/grimac/checks/impl/breaking/WrongBreak.java:84**\n* New behavior adds the block type to alert messages but there are no corresponding tests; please add unit tests to verify that the `type` field is included correctly in both alert scenarios.\n```\n+                        \", type=\" + blockBreak.block.getType())) {\n```\n</details>\n\n",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2111#pullrequestreview-2867169989",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2111",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2111#pullrequestreview-2867169989"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2111"
+      }
+    },
+    "submitted_at": "2025-05-26T04:12:24Z",
+    "commit_id": "adc782c410aba853cd224d595265368da1e84815"
+  },
+  {
+    "id": 2867175122,
+    "node_id": "PRR_kwDOFFQL3s6q5Z7S",
+    "user": {
+      "login": "copilot-pull-request-reviewer[bot]",
+      "id": 175728472,
+      "node_id": "BOT_kgDOCnlnWA",
+      "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+      "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+      "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "## Pull Request Overview\n\nThis PR enhances alert messages in WrongBreak.java by including the block type to provide more context for dig action alerts.\n- Updates the CANCELLED_DIGGING alert to use buildAlertMessage for constructing the message.\n- Updates the FINISHED_DIGGING alert to include the block type in a multi-line concatenated string.\n\n\n<details>\n<summary>Comments suppressed due to low confidence (1)</summary>\n\n**common/src/main/java/ac/grim/grimac/checks/impl/breaking/WrongBreak.java:81**\n* To maintain consistency and improve maintainability, consider refactoring this alert message to use buildAlertMessage similar to the CANCELLED_DIGGING alert.\n```\n+                        + \", type=\" + blockBreak.block.getType()) {\n```\n</details>\n\n",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2111#pullrequestreview-2867175122",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2111",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2111#pullrequestreview-2867175122"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2111"
+      }
+    },
+    "submitted_at": "2025-05-26T04:18:14Z",
+    "commit_id": "aae8e4924e6c984cdc22707e3b926cc6b17b5721"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 2070895288,
+    "node_id": "PRR_kwDOFFQL3s57b1q4",
+    "user": {
+      "login": "GurteX",
+      "id": 46028187,
+      "node_id": "MDQ6VXNlcjQ2MDI4MTg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46028187?u=0ebf738f3db9b54a1cd4fab50263851be2214b0f&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GurteX",
+      "html_url": "https://github.com/GurteX",
+      "followers_url": "https://api.github.com/users/GurteX/followers",
+      "following_url": "https://api.github.com/users/GurteX/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GurteX/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GurteX/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GurteX/subscriptions",
+      "organizations_url": "https://api.github.com/users/GurteX/orgs",
+      "repos_url": "https://api.github.com/users/GurteX/repos",
+      "events_url": "https://api.github.com/users/GurteX/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GurteX/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Why is there an exclamation mark in the end?",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/1479#pullrequestreview-2070895288",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1479",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/1479#pullrequestreview-2070895288"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/1479"
+      }
+    },
+    "submitted_at": "2024-05-22T11:14:43Z",
+    "commit_id": "8e5076a721e1945f15cba6fb3eb4c946405abec8"
+  }
+]

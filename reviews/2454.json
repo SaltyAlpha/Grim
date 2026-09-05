@@ -1,0 +1,42 @@
+[
+  {
+    "id": 3660709625,
+    "node_id": "PRR_kwDOFFQL3s7aMf75",
+    "user": {
+      "login": "Pantera07",
+      "id": 89838384,
+      "node_id": "MDQ6VXNlcjg5ODM4Mzg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89838384?u=3edd735e66b6296b229ca4f30d10fa32ec68dfc8&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Pantera07",
+      "html_url": "https://github.com/Pantera07",
+      "followers_url": "https://api.github.com/users/Pantera07/followers",
+      "following_url": "https://api.github.com/users/Pantera07/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Pantera07/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Pantera07/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Pantera07/subscriptions",
+      "organizations_url": "https://api.github.com/users/Pantera07/orgs",
+      "repos_url": "https://api.github.com/users/Pantera07/repos",
+      "events_url": "https://api.github.com/users/Pantera07/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Pantera07/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2454#pullrequestreview-3660709625",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2454",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2454#pullrequestreview-3660709625"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2454"
+      }
+    },
+    "submitted_at": "2026-01-14T13:19:12Z",
+    "commit_id": "1f6fa5240e14586d7b1b10a9807f847c44b41555"
+  }
+]

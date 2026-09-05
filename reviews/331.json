@@ -1,0 +1,42 @@
+[
+  {
+    "id": 888522582,
+    "node_id": "PRR_kwDOFFQL3s409cdW",
+    "user": {
+      "login": "sadcenter",
+      "id": 55924469,
+      "node_id": "MDQ6VXNlcjU1OTI0NDY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55924469?u=a890cb55354e792278c93f54524572c63fef51c1&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sadcenter",
+      "html_url": "https://github.com/sadcenter",
+      "followers_url": "https://api.github.com/users/sadcenter/followers",
+      "following_url": "https://api.github.com/users/sadcenter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sadcenter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sadcenter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sadcenter/subscriptions",
+      "organizations_url": "https://api.github.com/users/sadcenter/orgs",
+      "repos_url": "https://api.github.com/users/sadcenter/repos",
+      "events_url": "https://api.github.com/users/sadcenter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sadcenter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/331#pullrequestreview-888522582",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/331",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/331#pullrequestreview-888522582"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/331"
+      }
+    },
+    "submitted_at": "2022-02-21T11:00:31Z",
+    "commit_id": "2c8b2f4cb0dc306f2032aa2bbac50791187fdbbd"
+  }
+]

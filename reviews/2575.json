@@ -1,0 +1,122 @@
+[
+  {
+    "id": 4075912290,
+    "node_id": "PRR_kwDOFFQL3s7y8Xxi",
+    "user": {
+      "login": "copilot-pull-request-reviewer[bot]",
+      "id": 175728472,
+      "node_id": "BOT_kgDOCnlnWA",
+      "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+      "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+      "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "## Pull request overview\n\nThis PR addresses a PostgreSQL-specific failure in the `/grim history` command path by changing how UUID values are read from JDBC `ResultSet`s, aiming to support drivers that return native `UUID` objects rather than 16-byte arrays.\n\n**Changes:**\n- Updated `Violation.fromResultSet()` to use a new UUID extraction helper instead of assuming UUID columns are `byte[]`.\n- Added `DatabaseUtils.getUuid(ResultSet, String)` to support reading UUIDs as either `UUID` or `byte[]`.\n\n### Reviewed changes\n\nCopilot reviewed 2 out of 2 changed files in this pull request and generated 2 comments.\n\n| File | Description |\n| ---- | ----------- |\n| `common/src/main/java/ac/grim/grimac/manager/violationdatabase/Violation.java` | Switches UUID retrieval to the new `DatabaseUtils.getUuid(...)` helper. |\n| `common/src/main/java/ac/grim/grimac/manager/violationdatabase/DatabaseUtils.java` | Introduces a helper to decode UUID values from `ResultSet` across DB backends/drivers. |\n\n\n\n\n\n---\n\n💡 <a href=\"/GrimAnticheat/Grim/new/2.0?filename=.github/instructions/*.instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Add Copilot custom instructions</a> for smarter, more guided reviews. <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Learn how to get started</a>.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2575#pullrequestreview-4075912290",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2575",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2575#pullrequestreview-4075912290"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2575"
+      }
+    },
+    "submitted_at": "2026-04-08T14:35:23Z",
+    "commit_id": "7f14520694c7ecacee576c53fa266c7afe07357c"
+  },
+  {
+    "id": 4076015101,
+    "node_id": "PRR_kwDOFFQL3s7y8w39",
+    "user": {
+      "login": "FusselTV",
+      "id": 89834718,
+      "node_id": "MDQ6VXNlcjg5ODM0NzE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89834718?u=02f591749b966289d31b60a38f8a23a0f9849f3c&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FusselTV",
+      "html_url": "https://github.com/FusselTV",
+      "followers_url": "https://api.github.com/users/FusselTV/followers",
+      "following_url": "https://api.github.com/users/FusselTV/following{/other_user}",
+      "gists_url": "https://api.github.com/users/FusselTV/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/FusselTV/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/FusselTV/subscriptions",
+      "organizations_url": "https://api.github.com/users/FusselTV/orgs",
+      "repos_url": "https://api.github.com/users/FusselTV/repos",
+      "events_url": "https://api.github.com/users/FusselTV/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/FusselTV/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2575#pullrequestreview-4076015101",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2575",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2575#pullrequestreview-4076015101"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2575"
+      }
+    },
+    "submitted_at": "2026-04-08T14:50:28Z",
+    "commit_id": "7f14520694c7ecacee576c53fa266c7afe07357c"
+  },
+  {
+    "id": 4076046741,
+    "node_id": "PRR_kwDOFFQL3s7y84mV",
+    "user": {
+      "login": "FusselTV",
+      "id": 89834718,
+      "node_id": "MDQ6VXNlcjg5ODM0NzE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89834718?u=02f591749b966289d31b60a38f8a23a0f9849f3c&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FusselTV",
+      "html_url": "https://github.com/FusselTV",
+      "followers_url": "https://api.github.com/users/FusselTV/followers",
+      "following_url": "https://api.github.com/users/FusselTV/following{/other_user}",
+      "gists_url": "https://api.github.com/users/FusselTV/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/FusselTV/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/FusselTV/subscriptions",
+      "organizations_url": "https://api.github.com/users/FusselTV/orgs",
+      "repos_url": "https://api.github.com/users/FusselTV/repos",
+      "events_url": "https://api.github.com/users/FusselTV/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/FusselTV/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2575#pullrequestreview-4076046741",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2575",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2575#pullrequestreview-4076046741"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2575"
+      }
+    },
+    "submitted_at": "2026-04-08T14:54:40Z",
+    "commit_id": "7f14520694c7ecacee576c53fa266c7afe07357c"
+  }
+]

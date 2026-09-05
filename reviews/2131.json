@@ -1,0 +1,282 @@
+[
+  {
+    "id": 2864322779,
+    "node_id": "PRR_kwDOFFQL3s6quhjb",
+    "user": {
+      "login": "SamB440",
+      "id": 11319274,
+      "node_id": "MDQ6VXNlcjExMzE5Mjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11319274?u=4d987b180830fc417071a2b7916897b69867ecd9&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SamB440",
+      "html_url": "https://github.com/SamB440",
+      "followers_url": "https://api.github.com/users/SamB440/followers",
+      "following_url": "https://api.github.com/users/SamB440/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SamB440/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SamB440/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SamB440/subscriptions",
+      "organizations_url": "https://api.github.com/users/SamB440/orgs",
+      "repos_url": "https://api.github.com/users/SamB440/repos",
+      "events_url": "https://api.github.com/users/SamB440/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SamB440/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2864322779",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2864322779"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131"
+      }
+    },
+    "submitted_at": "2025-05-23T12:56:57Z",
+    "commit_id": "f4618cee5349b1531afe60b892749122d33cede9"
+  },
+  {
+    "id": 2864455028,
+    "node_id": "PRR_kwDOFFQL3s6qvB10",
+    "user": {
+      "login": "FellowNeighbour",
+      "id": 187972097,
+      "node_id": "U_kgDOCzQ6AQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/187972097?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/FellowNeighbour",
+      "html_url": "https://github.com/FellowNeighbour",
+      "followers_url": "https://api.github.com/users/FellowNeighbour/followers",
+      "following_url": "https://api.github.com/users/FellowNeighbour/following{/other_user}",
+      "gists_url": "https://api.github.com/users/FellowNeighbour/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/FellowNeighbour/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/FellowNeighbour/subscriptions",
+      "organizations_url": "https://api.github.com/users/FellowNeighbour/orgs",
+      "repos_url": "https://api.github.com/users/FellowNeighbour/repos",
+      "events_url": "https://api.github.com/users/FellowNeighbour/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/FellowNeighbour/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2864455028",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2864455028"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131"
+      }
+    },
+    "submitted_at": "2025-05-23T13:36:09Z",
+    "commit_id": "f4618cee5349b1531afe60b892749122d33cede9"
+  },
+  {
+    "id": 2865720806,
+    "node_id": "PRR_kwDOFFQL3s6qz23m",
+    "user": {
+      "login": "SamB440",
+      "id": 11319274,
+      "node_id": "MDQ6VXNlcjExMzE5Mjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11319274?u=4d987b180830fc417071a2b7916897b69867ecd9&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SamB440",
+      "html_url": "https://github.com/SamB440",
+      "followers_url": "https://api.github.com/users/SamB440/followers",
+      "following_url": "https://api.github.com/users/SamB440/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SamB440/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SamB440/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SamB440/subscriptions",
+      "organizations_url": "https://api.github.com/users/SamB440/orgs",
+      "repos_url": "https://api.github.com/users/SamB440/repos",
+      "events_url": "https://api.github.com/users/SamB440/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SamB440/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Add the setting comment to the translation files too, people can then translate it in the future",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2865720806",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2865720806"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131"
+      }
+    },
+    "submitted_at": "2025-05-23T21:03:07Z",
+    "commit_id": "5eb4047ea04013c746bbd0082ed217ca10dc8f52"
+  },
+  {
+    "id": 2866162147,
+    "node_id": "PRR_kwDOFFQL3s6q1inj",
+    "user": {
+      "login": "ManInMyVan",
+      "id": 113963219,
+      "node_id": "U_kgDOBsrw0w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113963219?u=ece4874d27c027e23612f26504feec3b82a3742b&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ManInMyVan",
+      "html_url": "https://github.com/ManInMyVan",
+      "followers_url": "https://api.github.com/users/ManInMyVan/followers",
+      "following_url": "https://api.github.com/users/ManInMyVan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ManInMyVan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ManInMyVan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ManInMyVan/subscriptions",
+      "organizations_url": "https://api.github.com/users/ManInMyVan/orgs",
+      "repos_url": "https://api.github.com/users/ManInMyVan/repos",
+      "events_url": "https://api.github.com/users/ManInMyVan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ManInMyVan/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866162147",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866162147"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131"
+      }
+    },
+    "submitted_at": "2025-05-24T05:38:14Z",
+    "commit_id": "f5ca2ecca29b2466ebccfa3ab62490d9e76944fe"
+  },
+  {
+    "id": 2866270985,
+    "node_id": "PRR_kwDOFFQL3s6q19MJ",
+    "user": {
+      "login": "SamB440",
+      "id": 11319274,
+      "node_id": "MDQ6VXNlcjExMzE5Mjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11319274?u=4d987b180830fc417071a2b7916897b69867ecd9&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SamB440",
+      "html_url": "https://github.com/SamB440",
+      "followers_url": "https://api.github.com/users/SamB440/followers",
+      "following_url": "https://api.github.com/users/SamB440/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SamB440/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SamB440/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SamB440/subscriptions",
+      "organizations_url": "https://api.github.com/users/SamB440/orgs",
+      "repos_url": "https://api.github.com/users/SamB440/repos",
+      "events_url": "https://api.github.com/users/SamB440/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SamB440/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866270985",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866270985"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131"
+      }
+    },
+    "submitted_at": "2025-05-24T11:58:40Z",
+    "commit_id": "f5ca2ecca29b2466ebccfa3ab62490d9e76944fe"
+  },
+  {
+    "id": 2866338094,
+    "node_id": "PRR_kwDOFFQL3s6q2Nku",
+    "user": {
+      "login": "SamB440",
+      "id": 11319274,
+      "node_id": "MDQ6VXNlcjExMzE5Mjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11319274?u=4d987b180830fc417071a2b7916897b69867ecd9&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SamB440",
+      "html_url": "https://github.com/SamB440",
+      "followers_url": "https://api.github.com/users/SamB440/followers",
+      "following_url": "https://api.github.com/users/SamB440/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SamB440/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SamB440/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SamB440/subscriptions",
+      "organizations_url": "https://api.github.com/users/SamB440/orgs",
+      "repos_url": "https://api.github.com/users/SamB440/repos",
+      "events_url": "https://api.github.com/users/SamB440/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SamB440/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866338094",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866338094"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131"
+      }
+    },
+    "submitted_at": "2025-05-24T14:33:43Z",
+    "commit_id": "80b06358f9ab994314132f17d166ae120bc55ebb"
+  },
+  {
+    "id": 2866364721,
+    "node_id": "PRR_kwDOFFQL3s6q2UEx",
+    "user": {
+      "login": "ManInMyVan",
+      "id": 113963219,
+      "node_id": "U_kgDOBsrw0w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113963219?u=ece4874d27c027e23612f26504feec3b82a3742b&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ManInMyVan",
+      "html_url": "https://github.com/ManInMyVan",
+      "followers_url": "https://api.github.com/users/ManInMyVan/followers",
+      "following_url": "https://api.github.com/users/ManInMyVan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ManInMyVan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ManInMyVan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ManInMyVan/subscriptions",
+      "organizations_url": "https://api.github.com/users/ManInMyVan/orgs",
+      "repos_url": "https://api.github.com/users/ManInMyVan/repos",
+      "events_url": "https://api.github.com/users/ManInMyVan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ManInMyVan/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866364721",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/2131#pullrequestreview-2866364721"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/2131"
+      }
+    },
+    "submitted_at": "2025-05-24T15:27:06Z",
+    "commit_id": "80b06358f9ab994314132f17d166ae120bc55ebb"
+  }
+]

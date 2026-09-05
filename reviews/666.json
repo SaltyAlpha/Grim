@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1048185045,
+    "node_id": "PRR_kwDOFFQL3s4-egjV",
+    "user": {
+      "login": "Jaren8r",
+      "id": 8620569,
+      "node_id": "MDQ6VXNlcjg2MjA1Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8620569?u=cd2eadea0867c0307f757df58f54ce37a9cfc36f&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Jaren8r",
+      "html_url": "https://github.com/Jaren8r",
+      "followers_url": "https://api.github.com/users/Jaren8r/followers",
+      "following_url": "https://api.github.com/users/Jaren8r/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Jaren8r/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Jaren8r/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Jaren8r/subscriptions",
+      "organizations_url": "https://api.github.com/users/Jaren8r/orgs",
+      "repos_url": "https://api.github.com/users/Jaren8r/repos",
+      "events_url": "https://api.github.com/users/Jaren8r/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Jaren8r/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/GrimAnticheat/Grim/pull/666#pullrequestreview-1048185045",
+    "pull_request_url": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/666",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/GrimAnticheat/Grim/pull/666#pullrequestreview-1048185045"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/GrimAnticheat/Grim/pulls/666"
+      }
+    },
+    "submitted_at": "2022-07-22T17:09:08Z",
+    "commit_id": null
+  }
+]
