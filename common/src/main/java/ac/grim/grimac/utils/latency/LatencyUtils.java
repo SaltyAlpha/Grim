@@ -10,17 +10,51 @@ import ac.grim.grimac.utils.data.IntToObjectPair;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.function.Consumer;
+import java.util.function.IntSupplier;
 
 public class LatencyUtils {
     private final LinkedList<IntToObjectPair<Runnable>> transactionMap = new LinkedList<>();
-    private final GrimPlayer player;
-
-    // Built from transactionMap and cleared at start of every handleNettySyncTransaction() call
-    // The actual usage scope of this variable's use is limited to within the synchronized block of handleNettySyncTransaction
+    private final IntSupplier lastTransactionReceived;
+    private final Consumer<Runnable> asyncExecutor;
+    private final Consumer<Exception> errorHandler;
+    private int minimumTransaction = Integer.MIN_VALUE;
+    private int pendingBarriers;
+    // Reused within the synchronized transaction drain, as before.
     private final ArrayList<Runnable> tasksToRun = new ArrayList<>();
 
     public LatencyUtils(GrimPlayer player) {
-        this.player = player;
+        this(player.lastTransactionReceived::get, player::runSafely, exception -> {
+            LogUtil.error("An error has occurred when running transactions for player: " + player.user.getName(), exception);
+            if (CommonGrimArguments.KICK_ON_TRANSACTION_ERRORS.value()) {
+                player.disconnect(MessageUtil.miniMessage(MessageUtil.replacePlaceholders(player, GrimAPI.INSTANCE.getConfigManager().getDisconnectPacketError())));
+            }
+        });
+    }
+
+    // Allows scheduling semantics to be tested without constructing a live player/server.
+    LatencyUtils(IntSupplier lastTransactionReceived, Consumer<Runnable> asyncExecutor, Consumer<Exception> errorHandler) {
+        this.lastTransactionReceived = lastTransactionReceived;
+        this.asyncExecutor = asyncExecutor;
+        this.errorHandler = errorHandler;
+    }
+
+    /**
+     * Queue a state transition before any subsequently submitted task. Later
+     * tasks cannot run on an earlier transaction, even if the trailing ping has
+     * not been written yet. Call from the same ordered packet stream as updates.
+     */
+    public synchronized void addRealTimeTaskBarrier(int transaction, Runnable runnable) {
+        minimumTransaction = Math.max(minimumTransaction, transaction);
+        pendingBarriers++;
+        transactionMap.add(new IntToObjectPair<>(minimumTransaction, () -> {
+            try {
+                runnable.run();
+            } finally {
+                pendingBarriers--;
+                if (pendingBarriers == 0) minimumTransaction = Integer.MIN_VALUE;
+            }
+        }));
     }
 
     public void addRealTimeTask(int transaction, Runnable runnable) {
@@ -31,18 +65,19 @@ public class LatencyUtils {
         addRealTimeTask(transaction, true, runnable);
     }
 
-    public void addRealTimeTask(int transaction, boolean async, Runnable runnable) {
-        if (player.lastTransactionReceived.get() >= transaction) { // If the player already responded to this transaction
+    public synchronized void addRealTimeTask(int transaction, boolean async, Runnable runnable) {
+        transaction = Math.max(transaction, minimumTransaction);
+        // An ACK may already be recorded while its queued transition has not
+        // executed. In that interval, bypassing the queue would undo ordering.
+        if (pendingBarriers == 0 && lastTransactionReceived.getAsInt() >= transaction) {
             if (async) {
-                player.runSafely(runnable);
+                asyncExecutor.accept(runnable);
             } else {
                 runnable.run();
             }
             return;
         }
-        synchronized (this) {
-            transactionMap.add(new IntToObjectPair<>(transaction, runnable));
-        }
+        transactionMap.add(new IntToObjectPair<>(transaction, runnable));
     }
 
     public void handleNettySyncTransaction(int transaction) {
@@ -89,11 +124,7 @@ public class LatencyUtils {
                 try {
                     runnable.run();
                 } catch (Exception e) {
-                    LogUtil.error("An error has occurred when running transactions for player: " + player.user.getName(), e);
-                    // Kick the player SO PEOPLE ACTUALLY REPORT PROBLEMS AND KNOW WHEN THEY HAPPEN
-                    if (CommonGrimArguments.KICK_ON_TRANSACTION_ERRORS.value()) {
-                        player.disconnect(MessageUtil.miniMessage(MessageUtil.replacePlaceholders(player, GrimAPI.INSTANCE.getConfigManager().getDisconnectPacketError())));
-                    }
+                    errorHandler.accept(e);
                 }
             }
         }
