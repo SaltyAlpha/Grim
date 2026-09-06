@@ -7,12 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterAll;
 import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.PacketEventsAPI;
-import com.github.retrooper.packetevents.manager.server.ServerManager;
-import com.github.retrooper.packetevents.manager.server.ServerVersion;
-import com.github.retrooper.packetevents.manager.protocol.ProtocolManager;
-import com.github.retrooper.packetevents.manager.player.PlayerManager;
-import com.github.retrooper.packetevents.netty.NettyManager;
-import com.github.retrooper.packetevents.injector.ChannelInjector;
+import ac.grim.grimac.testsupport.MappingTestApi;
 
 import java.util.Map;
 
@@ -25,18 +20,7 @@ class FluidTypeFlowingTest {
     static void initializeMappingResources() {
         previousApi = PacketEvents.getAPI();
         // Load bundled mapping resources, without starting a server or injector.
-        PacketEvents.setAPI(new PacketEventsAPI<Object>() {
-            public boolean isLoaded() { return false; }
-            public void init() { throw new UnsupportedOperationException(); }
-            public boolean isInitialized() { return false; }
-            public boolean isTerminated() { return false; }
-            public Object getPlugin() { return null; }
-            public ServerManager getServerManager() { return () -> ServerVersion.V_1_21_4; }
-            public ProtocolManager getProtocolManager() { throw new UnsupportedOperationException(); }
-            public PlayerManager getPlayerManager() { throw new UnsupportedOperationException(); }
-            public NettyManager getNettyManager() { throw new UnsupportedOperationException(); }
-            public ChannelInjector getInjector() { throw new UnsupportedOperationException(); }
-        });
+        PacketEvents.setAPI(new MappingTestApi());
     }
 
     @AfterAll

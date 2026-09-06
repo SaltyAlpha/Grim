@@ -36,7 +36,7 @@ public final class SyncedTags {
     public SyncedTags(GrimPlayer player) {
         this.player = player;
         ClientVersion version = player.getClientVersion();
-        trackTags(BLOCK, id -> StateTypes.getById(VERSION.toClientVersion(), id),
+        trackTags(BLOCK, id -> resolveBlockId(VERSION.toClientVersion(), id),
                 SyncedTag.<StateType>builder(CLIMBABLE).defaults(BlockTags.CLIMBABLE.getStates()).supported(version.isNewerThanOrEquals(ClientVersion.V_1_16)),
                 SyncedTag.<StateType>builder(MINEABLE_AXE).defaults(BlockTags.MINEABLE_AXE.getStates()).supported(version.isNewerThanOrEquals(ClientVersion.V_1_17)),
                 SyncedTag.<StateType>builder(MINEABLE_PICKAXE).defaults(BlockTags.MINEABLE_PICKAXE.getStates()).supported(version.isNewerThanOrEquals(ClientVersion.V_1_17)),
@@ -47,6 +47,16 @@ public final class SyncedTags {
                 SyncedTag.<StateType>builder(NEEDS_STONE_TOOL).defaults(BlockTags.NEEDS_STONE_TOOL.getStates()).supported(version.isNewerThanOrEquals(ClientVersion.V_1_17)),
                 SyncedTag.<StateType>builder(SWORD_EFFICIENT).defaults(BlockTags.SWORD_EFFICIENT.getStates()).supported(version.isNewerThanOrEquals(ClientVersion.V_1_20))
         );
+    }
+
+    static StateType resolveBlockId(ClientVersion version, int id) {
+        // -1 is an internal "unavailable in this version" mapping sentinel,
+        // not a valid registry entry from a tag packet.
+        if (id < 0) return null;
+        // Modded registries may contain ids absent from PacketEvents' vanilla
+        // mappings. getById dereferences the missing mapping internally.
+        StateType.Mapped mapped = StateTypes.getMappedById(version, id);
+        return mapped == null ? null : mapped.getStateType();
     }
 
     @SafeVarargs

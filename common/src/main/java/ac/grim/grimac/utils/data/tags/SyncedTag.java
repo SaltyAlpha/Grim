@@ -41,7 +41,10 @@ public final class SyncedTag<T> {
         // Server is sending tag replacement, clear default values.
         values.clear();
         for (int id : tag.getValues()) {
-            values.add(remapper.apply(id));
+            T value = remapper.apply(id);
+            // Keep supported members without treating unknown registry entries
+            // as a real member (or substituting an unrelated vanilla block).
+            if (value != null) values.add(value);
         }
     }
 
