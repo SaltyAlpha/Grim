@@ -11,6 +11,7 @@ import com.github.retrooper.packetevents.protocol.world.states.WrappedBlockState
 import com.github.retrooper.packetevents.protocol.world.states.defaulttags.BlockTags;
 import com.github.retrooper.packetevents.protocol.world.states.type.StateType;
 import com.github.retrooper.packetevents.protocol.world.states.type.StateTypes;
+import com.github.retrooper.packetevents.protocol.world.states.type.StateValue;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -109,7 +110,7 @@ public class FluidTypeFlowing {
         }
 
         Vector3dm vec3d = new Vector3dm(modX, 0.0D, modZ);
-        if (state.getLevel() >= 8) {
+        if (legacy$getLevel(state) >= 8) {
             for (BlockFace direction : new BlockFace[]{BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST}) {
                 if (isSolidFace(player, originalX, originalY, originalZ, direction) || isSolidFace(player, originalX, originalY + 1, originalZ, direction)) {
                     vec3d = VectorUtils.normalize(player, vec3d).add(0.0D, -6.0D, 0.0D);
@@ -127,8 +128,14 @@ public class FluidTypeFlowing {
             return -1;
         }
 
-        int level = state.getLevel();
+        int level = legacy$getLevel(state);
         return level >= 8 ? 0 : level;
+    }
+
+    // Called only after the state has been classified as water or lava. Bubble
+    // columns mapped to water for legacy clients lack LEVEL and act as sources.
+    static int legacy$getLevel(WrappedBlockState state) {
+        return state.hasProperty(StateValue.LEVEL) ? state.getLevel() : 0;
     }
 
     private static boolean affectsFlow(GrimPlayer player, int originalX, int originalY, int originalZ, int x2, int y2, int z2) {
