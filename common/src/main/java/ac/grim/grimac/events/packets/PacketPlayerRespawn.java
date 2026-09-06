@@ -152,7 +152,10 @@ public class PacketPlayerRespawn extends PacketListenerAbstract {
 
             player.addRealTimeTaskNow(player.cameraEntity::reset);
 
-            player.addRealTimeTaskNext(() -> {
+            // New-world chunks/entities can be submitted before the trailing
+            // transaction is written. Keep them behind this reset, not merely
+            // behind whichever transaction happens to be current on submission.
+            player.latencyUtils.addRealTimeTaskBarrier(player.lastTransactionSent.get() + 1, () -> {
                 // From 1.16 to 1.19, this doesn't get set to false for whatever reason
                 if (player.getClientVersion().isOlderThan(ClientVersion.V_1_16) || player.getClientVersion().isNewerThanOrEquals(ClientVersion.V_1_20)) {
                     player.isSneaking = false;
