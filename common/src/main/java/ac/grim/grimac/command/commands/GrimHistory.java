@@ -12,10 +12,10 @@ import ac.grim.grimac.api.storage.history.SessionSummary;
 import ac.grim.grimac.api.storage.history.ViolationEntry;
 import ac.grim.grimac.api.storage.identity.NameResolver;
 import ac.grim.grimac.api.storage.model.PlayerIdentity;
-import ac.grim.grimac.api.storage.query.Cursor;
 import ac.grim.grimac.api.storage.query.Page;
 import ac.grim.grimac.api.storage.query.Queries;
 import ac.grim.grimac.command.BuildableCommand;
+import ac.grim.grimac.command.HistoryPagination;
 import ac.grim.grimac.command.render.HistoryComponentRenderer;
 import ac.grim.grimac.internal.storage.checks.CheckRegistry;
 import ac.grim.grimac.manager.datastore.DataStoreLifecycle;
@@ -422,15 +422,11 @@ public class GrimHistory implements BuildableCommand {
         int maxPages = Math.max(1, (int) ((totalSessions + entriesPerPage - 1) / Math.max(1, entriesPerPage)));
         if (page > maxPages) page = maxPages;
 
-        Cursor cursor = advanceToPage(history, uuid, entriesPerPage, page);
-        Page<SessionSummary> result = history
-                .listSessions(uuid, cursor, entriesPerPage)
-                .toCompletableFuture().get(10, TimeUnit.SECONDS);
+        Page<SessionSummary> result = HistoryPagination.listPage(history, uuid, entriesPerPage, page);
 
         // Filter active: keep only sessions with at least one matching
         // violation. Costs N+1 detail fetches per visible page — acceptable
-        // at the page-size limit. Unfiltered path keeps the original single
-        // listSessions query.
+        // at the page-size limit. Unfiltered pages do not load session details.
         if (filter != null) result = filterSessionsByDetail(history, uuid, result, filter);
 
         UUID ongoingSessionId = ongoingSessionIdFor(lifecycle, uuid);
@@ -653,18 +649,6 @@ public class GrimHistory implements BuildableCommand {
     private static void flatten(Component c, StringBuilder sb) {
         if (c instanceof TextComponent tc) sb.append(tc.content());
         for (Component child : c.children()) flatten(child, sb);
-    }
-
-    private Cursor advanceToPage(HistoryService history, UUID uuid, int pageSize, int page) throws Exception {
-        if (page <= 1) return null;
-        Cursor cursor = null;
-        for (int i = 1; i < page; i++) {
-            Page<SessionSummary> r = history.listSessions(uuid, cursor, pageSize)
-                    .toCompletableFuture().get(5, TimeUnit.SECONDS);
-            cursor = r.nextCursor();
-            if (cursor == null) break;
-        }
-        return cursor;
     }
 
     private static @Nullable UUID ongoingSessionIdFor(DataStoreLifecycle lifecycle, UUID player) {
