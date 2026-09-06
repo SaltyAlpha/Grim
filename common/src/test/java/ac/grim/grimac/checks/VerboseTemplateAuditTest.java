@@ -184,7 +184,10 @@ class VerboseTemplateAuditTest {
     }
 
     private static void registerStandInTags() {
-        // Same names + wire shapes as VerboseCodecs, no PacketEvents needed.
+        // Install real renderers first: the append-only global registry must not
+        // retain these no-op audit renderers for other tests in the same JVM.
+        ac.grim.grimac.checks.impl.verbose.VerboseCodecs.ensureRegistered();
+        // Duplicate registration still verifies that the stand-in wire shapes match.
         STAND_IN_TAGS.forEach((name, wire) ->
                 VerboseTags.register(name, wire, (in, ctx, out, fmt) -> {
                     for (VerboseSchema.TypeTag tag : wire) in.skip(tag.tag());

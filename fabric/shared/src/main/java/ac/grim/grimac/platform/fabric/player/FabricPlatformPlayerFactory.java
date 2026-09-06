@@ -118,7 +118,9 @@ public class FabricPlatformPlayerFactory extends AbstractPlatformPlayerFactory<F
 
     @Override
     public void replaceNativePlayer(@NotNull UUID uuid, @NotNull FabricServerPlayerHandle serverPlayerEntity) {
-        super.cache.getPlayer(uuid).replaceNativePlayer(serverPlayerEntity);
+        PlatformPlayer cached = super.cache.getPlayer(uuid);
+        // Disconnect/cache invalidation can precede the respawn callback.
+        if (cached != null) cached.replaceNativePlayer(serverPlayerEntity);
     }
 
     public AbstractFabricPlatformInventory getPlatformInventory(AbstractFabricPlatformPlayer<?> serverPlayerEntity) {

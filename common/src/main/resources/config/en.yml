@@ -10,6 +10,11 @@ alerts:
     # This controls whether/how alerts are shared between servers connected to your proxy.
     # You must have 'bungee-plugin-message-channel' enabled in your Velocity's configuration if Velocity is in use.
     proxy:
+        # Shared secret for authenticated alerts: use the same random secret (32+ characters)
+        # on every backend. An empty secret disables proxy alerts even if send/receive are true.
+        # All participating backends must support signed alerts; unsigned legacy alerts are rejected.
+        # Keep backend clocks synchronized. Never share this secret with clients.
+        secret: ""
         # Should alerts be sent to other servers connected to your proxy?
         send: false
         # Should the alerts received from other servers be announced to this server?
